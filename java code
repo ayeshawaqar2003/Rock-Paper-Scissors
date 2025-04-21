@@ -1,0 +1,23 @@
+// Write code below 💖
+// Get the player's choice
+var player = Math.floor(Math.random() * 3);
+
+// Get the computer's choice
+var computer = Math.floor(Math.random() * 3);
+
+// Map the numbers to choices
+var choices = ['rock', 'paper', 'scissors'];
+
+console.log("Player picked: ", choices[player]);
+console.log("Computer picked: ", choices[computer]);
+
+// Determine the winner
+if (player === computer) {
+    console.log("It's a draw!");
+} else if ((player === 0 && computer === 2) || 
+           (player === 1 && computer === 0) ||
+           (player === 2 && computer === 1)) {
+    console.log("The player won!");
+} else {
+    console.log("The computer won!");
+}
